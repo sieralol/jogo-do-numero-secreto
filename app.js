@@ -1,6 +1,6 @@
 /* Ver anotações no arquivo apps2.js. Neste aqui, apenas o código.*/
 let listaDeNumeroSorteados = [];
-let numeroMaximo = 4;
+let numeroMaximo = 10;
 let numeroSecreto = gerarNumeroAleatorio(); // Criamos uma variável que recebe uma função, não apenas strings ou nº.
 let tentativa = 1;
 
@@ -15,7 +15,7 @@ function gerarNumeroAleatorio() {
         return gerarNumeroAleatorio();
     } else {
         listaDeNumeroSorteados.push(numeroGerado);
-        console.log (listaDeNumeroSorteados);
+        //console.log (listaDeNumeroSorteados);
         return numeroGerado;
     }
 }
@@ -32,7 +32,7 @@ function exibirMensagemInicial() {
 }
 
 exibirMensagemInicial();
-console.log (numeroSecreto);
+//console.log (numeroSecreto);
 
 
 function verificarChute() {
